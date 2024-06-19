@@ -5,7 +5,7 @@
 
 **NOTE: This is currently under development.**
 
-A collection of utilities related to CTC, with the goal of being fast and highly flexible.  
+A collection of utilities related to CTC, with the goal of being fast and highly flexible.
 
 ## Features
 
@@ -19,15 +19,16 @@ A collection of utilities related to CTC, with the goal of being fast and highly
 ## Installation
 
 `ctclib` depends on [kpu/kenlm](https://github.com/kpu/kenlm).
-You must install the following libraries as KenLM dependencies.
+You must install the following tools and libraries as KenLM dependencies.
 
+- cmake
 - Boost
 - Eigen3
 
 For example, if you are using Ubuntu (or some Debian based Linux), you can install them by running the following command:
 
 ```sh
-apt install libboost-all-dev libeigen3-dev
+apt install cmake libboost-all-dev libeigen3-dev
 ```
 
 ### Use ctclib from Rust

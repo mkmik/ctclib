@@ -16,7 +16,7 @@ fn main() {
     }
 
     // CMake
-    let dst = Config::new(&kenlm_root).profile("Release").build();
+    let dst = Config::new(&kenlm_root).define("CMAKE_CXX_STANDARD", "11").profile("Release").build();
 
     // bindgen build
     let bindings = bindgen::Builder::default()
